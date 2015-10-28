@@ -1,0 +1,22 @@
+<h1>Edit Post</h1>
+
+<%= form_tag(posts_path) do %>
+    <div class="post-field">
+      <%= label_tag "Title: " %>
+      <%= text_field_tag :title %>
+    </div>
+
+    <div class="post-field">
+      <%= label_tag :tags %>
+      <%= text_field_tag :tags %>
+    </div>
+
+    <div class="post-field">
+      <%= label_tag "Body: " %>
+      <%= text_area_tag :content %>
+    </div>
+
+    <%= submit_tag "Update!" %>
+<% end %>
+
+<%= link_to "Neverdamnmind", :back %>
