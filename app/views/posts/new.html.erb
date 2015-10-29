@@ -1,22 +1,10 @@
-<h1>New Post</h1>
+
+<ht>New Post</ht>
 
 <%= form_tag(posts_path) do %>
-    <div class="post-field">
-      <%= label_tag "Title: " %>
-      <%= text_field_tag :title %>
-    </div>
-
-    <div class="post-field">
-      <%= label_tag :tags %>
-      <%= text_field_tag :tags %>
-    </div>
-
-    <div class="post-field">
-      <%= label_tag "Body: " %>
-      <%= text_area_tag :content %>
-    </div>
-
-    <%= submit_tag "Publish!" %>
+    <%= render partial: "form" %>
 <% end %>
 
+
 <%= link_to "Neverdamnmind", :back %>
+

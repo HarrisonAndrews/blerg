@@ -1,0 +1,10 @@
+
+<ht>Edit Post</ht>
+
+<%= form_tag(posts_path(@post), method: :put) do %>
+
+<%= render partial: "form" %>
+
+<%= link_to "Neverdamnmind", :back %>
+
+<% end %>
